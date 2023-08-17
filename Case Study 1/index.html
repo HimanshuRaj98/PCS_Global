@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"/>
+      <link rel="stylesheet" href="style1.css" />
+      <link rel="stylesheet" href="apps.js">
+      <title>E - Registration Form</title>
+   </head>
+   <body>
+      <div class="container">
+         <h1>Tutor Registration Form</h1>
+         <form autocomplete="off">
+            <h4>Tutor Login Information</h4>
+
+            <!-- Username -->
+            <div class="input-section">
+               <label>Desired username: <span class="required-color">*</span></label>
+               <input
+                  type="text"
+                  placeholder="username"
+                  id="user-name-input"
+                  required
+                  />
+               <span id="user-name-error" class="hide required-color error-message">Invalid Input</span>
+               <span id="empty-user-name" class="hide required-color error-message">User Name Cannot Be Empty</span>
+            </div>
+
+            <!-- Choose Password -->
+            <div class="input-section">
+               <label>Password <span class="required-color">*</span></label>
+               <input
+                  type="password"
+                  placeholder="Enter Password"
+                  id="password"
+                  required
+                  />
+               <span id="password-error" class="hide required-color error-message"> Passwords Should Have Letter, Special symbols, Numbers And Length >= 8 </span>
+               <span id="empty-password" class="hide required-color error-message">Password Cannot Be Empty</span>
+            </div>
+
+            <!-- Secret Question -->
+            <div id="input-section">
+               <label>Secrect Question:<span class="required-color">*</span></label>
+               <select id="secretQuestion" name="secretQuestion" required>
+                  <option value="pet">What was your first pet's name?</option>
+                  <option value="city">What city were you born in?</option>
+                  <option value="school">What was the name of your elementary school?</option>
+               </select>
+               <br>
+            </div>
+
+            <!-- Answer -->
+            <div class="input-section">
+               <label>Answer <span class="required-color">*</span></label>
+               <input
+                  type="text "
+                  placeholder="Answer"
+                  id="answer-input"
+                  required
+                  />
+               <span id="answer-error" class="hide required-color error-message">Invalid Input</span>
+               <span id="empty-answer" class="hide required-color error-message">
+               Answer Cannot Be Empty
+               </span>
+            </div>
+            <h4>Personal Details & Tutor Contact Information</h4>
+
+            <!-- Name -->
+            <div class="input-section">
+               <label>Name <span class="required-color">*</span></label>
+               <input
+                  type="text"
+                  placeholder="Enter Name"
+                  id="name-input"
+                  required
+                  />
+               <span id="name-error" class="hide required-color error-message">Invalid Input</span>
+               <span id="empty-name" class="hide required-color error-message">Name Cannot Be Empty</span>
+            </div>
+
+            <!-- Gender -->
+            <div class="option-item">
+               <span class="option-label">Gender:</span>
+               <select>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+               </select>
+            </div>
+
+            <!-- AGE -->
+            <div class="option-item">
+               <span class="option-label">Age:</span>
+               <select>
+                  <option value="18-25">18-25</option>
+                  <option value="26-35">26-35</option>
+                  <option value="36-45">36-45</option>
+                  <option value="46+">46+</option>
+               </select>
+            </div>
+
+            <!-- Country -->
+            <div><Label>Country : INDIA</Label></div>
+
+            <!-- Location -->
+            <div class="option-item">
+               <span class="option-label">Location:</span>
+               <select>
+                  <optgroup label="Indian States">
+                     <option value="Andhra Pradesh">Andhra Pradesh</option>
+                     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                     <option value="Assam">Assam</option>
+                     <option value="Bihar">Bihar</option>
+                     <option value="Chhattisgarh">Chhattisgarh</option>
+                     <option value="Goa">Goa</option>
+                     <option value="Gujarat">Gujarat</option>
+                     <option value="Haryana">Haryana</option>
+                     <option value="Himachal Pradesh">Himachal Pradesh</option>
+                     <option value="Jharkhand">Jharkhand</option>
+                     <option value="Karnataka">Karnataka</option>
+                     <option value="Kerala">Kerala</option>
+                     <option value="Madhya Pradesh">Madhya Pradesh</option>
+                     <option value="Maharashtra">Maharashtra</option>
+                     <option value="Manipur">Manipur</option>
+                     <option value="Meghalaya">Meghalaya</option>
+                     <option value="Mizoram">Mizoram</option>
+                     <option value="Nagaland">Nagaland</option>
+                     <option value="Odisha">Odisha</option>
+                     <option value="Punjab">Punjab</option>
+                     <option value="Rajasthan">Rajasthan</option>
+                     <option value="Sikkim">Sikkim</option>
+                     <option value="Tamil Nadu">Tamil Nadu</option>
+                     <option value="Telangana">Telangana</option>
+                     <option value="Tripura">Tripura</option>
+                     <option value="Uttar Pradesh">Uttar Pradesh</option>
+                     <option value="Uttarakhand">Uttarakhand</option>
+                     <option value="West Bengal">West Bengal</option>
+                  </optgroup>
+               </select>
+            </div>
+
+            <!-- Postal -->
+            <div>
+               <label>Postal/ZIP Code:<span class="required-color">*</span></label>
+               <input type="text" id="postalCode" name="postalCode" maxlength="6">
+               <small>Enter a valid postal/ZIP code.</small>
+               <br>
+            </div>
+
+            <!-- Area -->
+            <div>
+               <label class="option-label" for="area">Area:</label>
+               <input type="text" id="area" name="area">
+            </div>
+
+            <!-- Present Address -->
+            <div>
+               <label class="option-label" for="address">Present Address:</label>
+               <textarea id="address" name="address" rows="4"></textarea>
+            </div>
+
+            <!-- Contact Number -->
+            <div class="input-section">
+               <label>Phone <span class="required-color">*</span></label>
+               <input
+                  type="text"
+                  placeholder="Enter Phone Number"
+                  id="phone"
+                  required
+                  />
+               <span id="phone-error" class="hide required-color error-message"
+                  >Phone Number Should Have 10 Digits</span>
+               <span id="empty-phone" class="hide required-color error-message">Phone cannot be empty</span>
+            </div>
+
+            <!-- Email Address -->
+            <div class="input-section">
+               <label>Email <span class="required-color">*</span></label>
+               <input type="email" placeholder="Enter Email" id="email" required />
+               <span id="email-error" class="hide required-color error-message">Invalid Email</span>
+               <span id="empty-email" class="hide required-color error-message">Email Cannot Be Empty</span>
+            </div>
+
+            <!-- Upload Picutre -->
+            <label class="option-label" for="photo">Upload Photo:<span class="required-color">*</span></label>
+            <input type="file" id="photo" name="photo" accept=".jpg, .jpeg, .png, .gif" max-size="2097152">
+            <small>(.jpg, .jpeg, .png, .gif)</small>
+            <button id="submit-button">Contunue</button>
+         </form>
+      </div>
+   </body>
+</html>
