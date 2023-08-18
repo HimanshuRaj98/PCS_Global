@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(253, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form {
+    width: 90%;
+    max-width: 700px;
+    padding: 40px 30px; 
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0; 
+    position: relative;
+    color: #72261e;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+    width: 100%;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+/* button style */
+form button {
+    background: #ff5a5f;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 40px; 
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0; 
+    font-size: 16px;
+}
+
+.input-group span {
+    position: absolute;
+    color: #e74c3c;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+}
+
+#submit-error{
+    color: #e74c3c;
+}
+
+h4 {
+    margin-bottom: 15px; 
+    font-size: 24px; 
+    color: #f17070;
+    text-align: center;
+}
