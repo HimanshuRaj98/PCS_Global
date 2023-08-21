@@ -20,7 +20,7 @@ Java Data Types:
         double myDouble = 358.456878;
         boolean myBoolean = true;
         char myChar = 'B';
-        
+
     2> Non-primitive data type: Such as string, Array and Classes
         >String - Represents a sequence of characte.
         >Array - Represents a collection of elements of the same datatyple.
@@ -85,4 +85,5 @@ Java Operators:
         `condition ? value_if_true value_if_false`: Evaluates a condition and returns one of two values based on wether the condition is true or false.
         
     Java String:
-        In java, 'String' class represents al sequence of characters. It is a part of the `java.lang` package and is one of the most commonly used classes in java for working with text and strings.String in java are immutable, meaning their values cannot be changed    
+        In java, 'String' class represents al sequence of characters. It is a part of the `java.lang` package and is one of the most commonly used classes in java for working with text and strings.String in java are immutable, meaning their values cannot be changed after they are created.
+        

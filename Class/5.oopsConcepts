@@ -1,0 +1,22 @@
+    Java OOPs Concept: 
+        Java is an object-oriented programming(00P) language, which means it follows the principles of object-oriented programming.
+        Object-oriented programming is a programming paradign that revolves around the concept of "object"- self- contained units that encaptulate data and behavior, These objects interact with each other to accomplish tasks and represent real-world entities in a program.
+
+    There are some key concept:
+        1> Classes and Objects
+        2> Encaptulation
+        3> Abstruction
+        4> Inheritance
+        5> Polymorphism
+
+    Java classes/Objects: Everything in java is associated with classes and objects, along with its attributes and methods.
+    
+    classes:- 
+        1 > A class is a user-defined data type that serves as a blueprint for creating objects.
+        2 > A class is defined using the class keyword, followed by the class name and the class body within a curly braces.
+        3 > The data members represent the state or characteristics of the object, and the methods define their behavior or action.
+        
+    Objects:- 
+    1> Am objects is en instance if class. It represents a specific entity that can be created based on the classes blueprint.
+    2> Objects have states (value of data members) and behaviour (methods defined in the class).
+    3> Te create a object we use the пом keyword followed by the class name and parentheses(constructor)
