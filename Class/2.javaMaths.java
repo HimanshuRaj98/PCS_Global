@@ -1,5 +1,5 @@
-    // Java Maths:
-    //     In java, the Math class is a built-in class that is part of java.lang package. It provides a collection of static methods for performing common mathematical operations. The Math class allows us to perform arithemetic, trigonometric, logarithmic, exponential, rounding and other mathemetical calculation.  
+    Java Maths:
+         In java, the Math class is a built-in class that is part of java.lang package. It provides a collection of static methods for performing common mathematical operations. The Math class allows us to perform arithemetic, trigonometric, logarithmic, exponential, rounding and other mathemetical calculation.  
     
 
     1> Arithemetic:
